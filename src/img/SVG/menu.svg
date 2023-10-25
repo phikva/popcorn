@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28.5px" height="19.5px" viewBox="0 0 28.5 19.5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>menu</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="atomicons" transform="translate(-191,25, -1006)" stroke="#000000" stroke-width="1.5">
+            <g id="menu" transform="translate(192, 1006)">
+                <line x1="27" y1="18.75" x2="0" y2="18.75" id="Path"></line>
+                <line x1="27" y1="9.75" x2="0" y2="9.75" id="Path"></line>
+                <line x1="27" y1="0.75" x2="0" y2="0.75" id="Path"></line>
+            </g>
+        </g>
+    </g>
+</svg>

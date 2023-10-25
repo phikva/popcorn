@@ -1,0 +1,57 @@
+/**
+ * store site wide variables here
+ * note: these are not all variables we have at our disposal; many variables are also defined in the _settings.scss file
+ */
+
+// fonts
+$fonts: (
+	primary: everett,
+	primaryLight: everett,
+	primaryRegular: everettregular,
+	primarySemibold: everettmedium,
+	primaryBold: everettbold,
+	secondary: everett,
+);
+
+// headings (some of the heading styling is also done in _settings.scss)
+$headingStyles: (
+	font-family: map-get($fonts, primarybold),
+	line-height: 1.3em,
+	//letter-spacing: .02em,
+	margin-top: 1.5em,
+	margin-bottom: 20px,
+);
+
+// colors (actual color values are defined in _settings.scss)
+$colors: (
+	primary: map-get($foundation-palette, primary),
+	secondary: map-get($foundation-palette, secondary),
+	tertiary: map-get($foundation-palette, tertiary),
+	success: map-get($foundation-palette, success),
+	warning: map-get($foundation-palette, warning),
+	alert: map-get($foundation-palette, alert),
+	black: $black,
+	white: $white,
+	lightGray: $light-gray,
+	gray: $medium-gray,
+	mediumGray: $medium-gray,
+	darkGray: $dark-gray,
+	darkBlue: $dark-blue,
+	
+);
+
+$shadows: (
+	light: 0px 2px 4px rgba(map-get($colors, black), .15),
+);
+
+// z-indexes. easier to maintain control when all indexes are in one place. use map-get($zindex, siteNavigation) to retrieve value from array
+$zindex: (
+	siteNavigation: 2000,
+	overlay: 1500,
+);
+
+// global transition
+$transition: all .3s ease-in-out;
+
+// form stuff - variables that foundation doesnt provide but can prove helpful
+$inputHeight: ($input-font-size * unitless-calc($input-line-height)) + (get-side($input-padding, 'top') + get-side($input-padding, 'bottom')) - rem-calc(1); // same formula as foundation uses to calculate input heights

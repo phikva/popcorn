@@ -1,0 +1,83 @@
+/*
+ * all mixins should be placed in this file
+ */
+
+
+/*
+ * fix for sticky elements so they don't crash with the wp admin bar
+ */
+@mixin wpAdminStickyFix( $offset: 0 ) {
+  body.admin-bar & {
+    top: 46px + $offset;
+    @media (min-width: 783px) {
+      top: 32px + $offset;
+    }
+  }
+}
+
+
+/**
+ * create button
+ * @param string $level ('primary', 'primaryTransparent', 'secondary', 'secondaryTransparent', 'white', 'whiteTransparent'). optional. default: 'none'
+ */
+@mixin button($level: 'none')
+{
+    @if $level == 'none'
+    {
+        // font-family: roboto-medium;
+        font-size: .85rem;
+        letter-spacing: 0.07em;
+        line-height: $inputHeight; // same as height
+        text-decoration: none;
+        text-align: center;
+        white-space: nowrap;
+        color: map-get($colors, black);
+        background-color: map-get($colors, white);
+        max-width: 100%;
+        height: $inputHeight;
+        padding-right: 3em;
+        padding-left: 3em;
+        border-width: 1px;
+        border-style: solid;
+        margin-bottom: 1.4rem;
+        display: inline-block;
+        overflow: hidden;
+        transition: $transition;
+    } @else if $level == 'primary'
+    {
+        color: map-get($colors, white);
+        background-color: map-get($colors, primary);
+        border-color: map-get($colors, primary);
+        &:hover, &:focus {
+            color: map-get($colors, primary);
+            background-color: transparent;
+        }
+    } @else if $level == 'primaryTransparent'
+    {
+        color: map-get($colors, primary);
+        background-color: transparent;
+        border-color: map-get($colors, primary);
+        &:hover, &:focus {
+            color: map-get($colors, white);
+            background-color: map-get($colors, primary);
+        }
+    } @else if $level == 'secondary'
+    {
+        color: map-get($colors, white);
+        background-color: map-get($colors, secondary);
+        border-color: map-get($colors, secondary);
+        &:hover, &:focus {
+            color: map-get($colors, secondary);
+            background-color: transparent;
+        }
+    } @else if $level == 'secondaryTransparent'
+    {
+        color: map-get($colors, secondary);
+        background-color: transparent;
+        border-color: map-get($colors, secondary);
+        &:hover, &:focus {
+            color: map-get($colors, white);
+            background-color: map-get($colors, secondary);
+        }
+    }
+}

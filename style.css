@@ -1,0 +1,17 @@
+/*!
+Theme Name: popcorn
+Theme URI: http://popcorn.no/
+Author: Mediabooster AS
+Author URI: http://mediabooster.no/
+Description: Et tema bygget helt fra bunnen av for Mediabooster sine kunder
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: mediabooster
+
+This file should be left as is and only be used for quick fixes when absolutely necessary (paste in below the import). 
+All CSS/SASS goes in assets/scss/partials/_partial_name.scss
+
+*/
+
+@import 'dist/app.bundle.1698051432876.css';

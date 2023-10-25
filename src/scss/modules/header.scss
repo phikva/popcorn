@@ -1,0 +1,71 @@
+.custom-logo {
+    width: 80px;
+    height: auto;
+}
+
+.site-header {
+
+}
+
+.main-menu-container {
+    padding: 15px 0;
+}
+
+.top-menu-container {
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+}
+
+.main-menu-item a{
+    text-decoration: none;
+    color: $black;
+
+    &:hover {
+        color: map-get($colors, primary)
+    }
+}
+
+#menu-top-menu {
+    list-style: none;
+    margin: 0;
+}
+
+.top-menu-wrapper {
+    background: #F2F2F2;
+}
+
+#site-switcher li {
+    display: inline-block;
+}
+
+#site-switcher ul {
+    margin: 0;
+}
+
+#site-switcher li a {
+    text-decoration: none;
+    color: $black;
+    font-size: 16px;
+}
+
+.current-site {
+    font-weight: bold;
+}
+
+/* Add a "/" after each <li> */
+#site-switcher li::after {
+    content: "/";
+    margin-left: 7.5px;  /* Space to the left of the "/" */
+    margin-right: 7.5px; /* Space to the right of the "/" */
+  }
+  
+  /* Remove the "/" after the last <li> */
+#site-switcher  li:last-child::after {
+    content: "";
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .current-menu-item a{
+      font-weight: bold;
+  }

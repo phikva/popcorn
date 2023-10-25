@@ -1,0 +1,67 @@
+/* Container */
+#sidenavContainer {
+  height: 100%;
+  width: 250px;  /* Set to the maximum width that the sidenav will have */
+  position: fixed;
+  z-index: 1;
+  top: 25%;
+  left: 0;
+  transition: 0.5s;
+}
+
+/* Toggle Button */
+#toggleButton {
+  font-size: 36px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: 2;
+  background-color: #111;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%;
+  width: 0;  /* Initially hidden */
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;  /* Hide overflow content */
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style the close button when hovered */
+  .sidenav .closebtn:hover {
+    color: #f1f1f1;
+  }

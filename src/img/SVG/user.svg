@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24.5083613px" height="31.5000747px" viewBox="0 0 24.5083613 31.5000747" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>user</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="atomicons" transform="translate(-274,2517, -1160,25)" stroke="#000000" stroke-width="1.5">
+            <g id="user" transform="translate(275, 1161)">
+                <circle id="Oval" cx="11.5050371" cy="6" r="6"></circle>
+                <path d="M20.0100371,30.0000377 C20.954309,30.0000377 21.8434739,29.5554175 22.4100371,28.8 C22.9766002,28.0445825 23.1544332,27.066501 22.8900371,26.16 C21.3223082,21.2178292 16.6888769,17.8968982 11.5050371,18 C6.32119721,17.8968982 1.68776589,21.2178292 0.120037051,26.16 C-0.145112527,27.0690402 0.0344843451,28.0499044 0.604525134,28.8060207 C1.17456592,29.562137 2.06812846,30.0047381 3.01503705,30.0000377 L20.0100371,30.0000377 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

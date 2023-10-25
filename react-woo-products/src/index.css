@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Hide the "+" symbol by default */
+a.accordion-title::before {
+  content: "";
+}
+
+/* Show the "+" symbol only for items with the "show-plus" class */
+.show-plus::before {
+  content: "+";
+}
+
+.accordion-content.is-open {
+  display: block !important;
+}
+
+.no-margin {
+  margin: 0!important;
+}
+
+.centered-content {
+  text-align: center;
+}
+
+.quantity-adjust {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	font-family: 'quicksand'!important;
+	word-wrap: break-word;
+	font-weight:bold!important;
+}
+
+h4, .h4 {
+  font-size: 20px!important;
+  margin-top: 20px!important;
+}
+
+.card {
+  border: 0!important;
+  background: transparent!important;
+}
+
+.product-card-container:hover {
+  background: #FAF9F6;
+  cursor: pointer;
+}
+
+.price-font {
+  font-size: 18px;
+}
+
+.card-section {
+  text-align: center;
+}
+
+.accordion {
+  font-family: 'quicksand'!important;
+}
+
+.accordion-item {
+  list-style: none!important;
+}
+
+.accordion-content li a{
+  border: 0!important;
+}
+
+.accordion-content li a:hover{
+  border: 0!important;
+  background: transparent!important;
+}
+
+
+.accordion-item a {
+  font-size: 16px!important;
+  color: #333!important;
+}
+
+.accordion-item a:hover {
+  font-size: 16px!important;
+  color: #DF001D!important;
+  background: #FAF9F6!important;
+}
+
+.accordion-title:focus {
+  background: transparent!important;
+}
+
+.attribute-tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.attribute-tabs ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.attribute-tabs li {
+  margin-right: 10px;
+  border: 1px solid gray;
+  padding: 10px 15px;
+}
+
+.attribute-tabs button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.attribute-details {
+  margin-top: 10px;
+  /* Add more styles as needed */
+}
+
+.stock-status {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.stock-indicator {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}

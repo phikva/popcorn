@@ -1,0 +1,46 @@
+/*
+ * images inserted into wp posts via the wysiwyg editor
+ */
+
+// images inserted into posts
+img[class*="wp-image"], figure.wp-caption {
+	margin: 3rem 0;
+	display: block;
+	> a {
+		display: block;
+	}
+	img[class*="wp-image"] {
+		margin: 0;
+	}
+	figcaption {
+		font-family: inherit;
+		font-size: .9em;
+    	font-style: italic;
+		text-align: right;
+	}
+	&.alignleft, &.alignright {
+		width: 100%;
+		float: none;
+		@include breakpoint(medium) {
+			width: 50% !important;
+		}
+	}
+	&.alignleft {
+		@include breakpoint(medium) {
+			margin: 1rem 2rem 1rem 0;
+			float: left;
+		}
+	}
+	&.alignright {
+		@include breakpoint(medium) {
+			margin: 1rem 0 1rem 2rem;
+			float: right;
+		}
+	}
+	&.aligncenter {
+		width: 100% !important;
+		img {
+			width: 100%;
+		}
+	}
+}

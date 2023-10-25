@@ -1,0 +1,32 @@
+{
+  "name": "iteo",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack --watch",
+    "critical": "criticalcss -u=http://localhost:8888/iteo/www/ -f=dist/app.bundle.css -o=dist/critical.min.css -i=true && csso dist/critical.min.css -o dist/critical.min.css && sed -i '' 's_fonts/_http://www.iteo.no/themes/iteo/dist/fonts/_g' dist/critical.min.css"
+  },
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "foundation-sites": "^6.7.3",
+    "sass": "^1.66.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "browser-sync": "^2.27.7",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.8.1",
+    "file-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "postcss": "^8.4.28",
+    "postcss-loader": "^6.2.1",
+    "postcss-preset-env": "^7.8.3",
+    "replace-in-file-webpack-plugin": "^1.0.6",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.3",
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.10.0"
+  }
+}

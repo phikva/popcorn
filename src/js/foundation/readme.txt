@@ -1,0 +1,1 @@
+This is the output folder for the minified version of the foundation javascript. See the Gruntfile to learn how to include foundation javascript in the project.

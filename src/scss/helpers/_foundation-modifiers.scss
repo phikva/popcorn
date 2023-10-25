@@ -1,0 +1,38 @@
+.grid-container
+{
+	&--small
+	{
+		max-width: $smallGridWidth;
+		&--left
+		{
+			max-width: $smallGridWidth;
+			margin-left: 0;
+		}
+	}
+	&--large
+	{
+		width: $largeGridWidth;
+		max-width: 100%;
+	}
+	&--stretch
+	{
+		width: $global-width;
+		max-width: 100%;
+	}
+	&--right
+	{
+		@media (min-width: $global-width)
+		{
+			margin-right: calc((100vw - #{$global-width}) / 2 );
+			margin-left: auto;
+		}
+	}
+	&--left
+	{
+		margin: 0;
+		@media (min-width: $global-width)
+		{
+			margin-left: calc((100vw - #{$global-width}) / 2 );
+		}
+	}
+}

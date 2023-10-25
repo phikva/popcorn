@@ -1,0 +1,31 @@
+.standard-section {
+    
+.button-container {
+    display: flex;
+   justify-content: center;
+}
+
+    img {
+        object-fit: contain;
+    }
+
+    @include breakpoint('small') {
+        .standard-section.row > * {
+            margin-bottom: 50px; 
+        }
+    }
+  
+    
+}
+
+@include breakpoint('small') {
+    .content {
+        margin-bottom: 70px;
+    }
+}
+
+@include breakpoint('large') {
+    .standard-section.row > * {
+        margin-bottom: 250px; 
+    }
+}

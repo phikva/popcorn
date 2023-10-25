@@ -1,0 +1,35 @@
+.btn-primary {
+  background: $dark-blue;
+  border: 1px solid map-get($colors, darkBlue);
+  border-radius: 30px;
+  color: $white;
+  padding: 16px 20px;
+  text-decoration: none;
+  transition: ease-in-out .2s;
+  &:hover {
+    background: $white;
+    border: 1px solid $white;
+    color: $black;
+  }
+}
+
+.btn-secondary {
+  background: none;
+  border: 1px solid map-get($colors, darkGray);
+  font-weight: 400;
+  border-radius: 30px;
+  color: $black;
+  padding: 12px 30px;
+  text-decoration: none;
+  transition: ease-in-out .2s;
+  &:hover {
+    background: $dark-blue;
+    color: $white;
+  }
+}
+
+.btn-alternative {
+  background: none;
+  border: 3px solid map-get($colors, darkBlue);
+  padding: 12px 30px;
+}

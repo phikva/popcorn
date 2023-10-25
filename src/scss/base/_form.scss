@@ -1,0 +1,78 @@
+/*
+ * standard form styling
+ */
+
+button,
+[type="submit"],
+[type="button"]
+{
+	cursor: pointer;
+	&:active, &:focus
+	{
+		outline: none;
+	}
+}
+
+select,
+button,
+[type="button"],
+[type="submit"]
+{
+	-webkit-appearance: none;
+}
+
+input,
+textarea,
+select
+{
+	@include breakpoint(small only)
+	{
+		font-size: 16px !important; // prevents auto-zooming in when pressing inputs on mobile
+	}
+}
+
+.screen-reader-response
+{
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+	border: 0;
+}
+
+.wpcf7-not-valid-tip
+{
+	color: map-get($colors, white);
+	background-color: map-get($colors, alert);
+	padding: .5em;
+	margin-bottom: 2rem;
+	display: block;
+}
+
+
+.wpcf7-response-output
+{
+	padding: .5em;
+}
+
+.wpcf7-validation-errors
+{
+	color: map-get($colors, white);
+	background-color: map-get($colors, alert);
+}
+
+.wpcf7-mail-sent-ok
+{
+	color: map-get($colors, black);
+	background-color: map-get($colors, success);
+}
+
+.wpcf7-display-none
+{
+	display: none;
+}

@@ -1,0 +1,49 @@
+/*
+ * all functions should be placed in this file
+ * above every snippet you will find a code example that calls the function.
+ */
+
+
+/*
+ * get deeply nested values from sass map
+ * @param {Map} $map - Map
+ * @param {Arglist} $keys - Key chain
+ * @return {*} - Desired value
+ * example: $h3-size-medium: map-deep-get($header-styles, 'medium', 'h3', 'font-size');
+ */
+@function map-deep-get($map, $keys...) {
+    @each $key in $keys {
+        $map: map-get($map, $key);
+    }
+    @return $map;
+}
+
+
+// menuSetting(breakpoint);
+@function menuSetting($prop) {
+	@return map-get($swMenu, $prop);
+};
+
+/*
+ * applies a smooth linear gradient (smoother than the regular linear gradient) to an element, from $color to transparent
+ * inspired by https://css-tricks.com/easing-linear-gradients/
+ */
+// scrim( $color: #00f, $direction: to top );
+@function scrim( $color: #000, $direction: to bottom ) {
+    @return linear-gradient(
+        $direction, 
+        rgba($color, 0) 0%,
+        rgba($color, 0.002) 1.8%,
+        rgba($color, 0.008) 4.8%,
+        rgba($color, 0.021) 9%,
+        rgba($color, 0.042) 13.9%,
+        rgba($color, 0.075) 19.8%,
+        rgba($color, 0.126) 27%,
+        rgba($color, 0.194) 35%,
+        rgba($color, 0.278) 43.5%,
+        rgba($color, 0.382) 53%,
+        rgba($color, 0.541) 66%,
+        rgba($color, 0.738) 81%,
+        rgba($color, 1) 100%
+    );
+}

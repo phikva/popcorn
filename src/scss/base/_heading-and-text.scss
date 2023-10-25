@@ -1,0 +1,60 @@
+/**
+ * basic heading styles
+ */
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	font-family: 'poppins', 'sans-serif';
+	line-height: map-get($headingStyles, line-height);
+	letter-spacing: map-get($headingStyles, letter-spacing);
+	word-wrap: break-word;
+	margin-top: map-get($headingStyles, margin-top);
+	margin-bottom: map-get($headingStyles, margin-bottom);
+	font-weight:bold!important;
+	color: $heading;
+}
+.btn-primary,
+.btn-secondary {
+	@include breakpoint('small') {
+		font-size: 13px;
+	}
+	
+	@include breakpoint('large') {
+		font-size: 14px;
+	}
+}
+p, a{
+	// font-size: 18px;
+	color:  $body-font-color;
+	line-height: normal;
+	font-family: 'poppins', 'sans-serif';
+}
+.text-small {
+	font-size: 15px;
+	line-height: 1.5;
+	margin-bottom: 40px;
+}
+.h3-large {
+	font-size: 35px;
+}
+.ingress-liten {
+	font-size: 20px;
+	line-height: 1.25;
+	margin-bottom: 0;
+}
+
+.ingress {
+	line-height: 1.2;
+	@include breakpoint('small') {
+		font-size: 20px;
+	}
+	@include breakpoint('medium') {
+		font-size: 26px;
+	}
+	@include breakpoint('large') {
+		font-size: 32px;
+	}
+}
+
+.entry-title {
+	margin-bottom: 1em;
+}

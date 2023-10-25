@@ -1,0 +1,37 @@
+.tjenester {
+    ul {
+        line-height: 1.4;
+    }
+    h2 {
+        margin-top: 0;
+        font-size: 35px;
+    }
+    p {
+        font-size: 20px;
+        color:  $dark-gray;
+        @include breakpoint('small') {
+            margin-bottom: 1.6em;
+        }
+    }
+
+    i {
+        width: 1.25em;
+        font-size: 13px;
+    }
+    @include breakpoint('small') {
+		padding-bottom: 80px;
+	}
+	@include breakpoint('medium') {
+		
+	}
+	@include breakpoint('large') {
+		padding-bottom: 200px;
+	}
+
+    @include breakpoint('large') {
+        .spacing-fix {
+            padding-left: 50px;
+         }
+       }
+
+}

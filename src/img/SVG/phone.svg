@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31.5003275px" height="31.5000066px" viewBox="0 0 31.5003275 31.5000066" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>phone</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="atomicons" transform="translate(-352,25, -755,25)" stroke="#000000" stroke-width="1.5">
+            <g id="phone" transform="translate(353, 756)">
+                <path d="M2.7,15.3000066 L8.82,11.5350066 C9.84422247,10.9049606 10.3932706,9.72421191 10.215,8.53500662 L9.375,2.53500662 C9.14564963,1.07318854 7.88469732,-0.00307883804 6.405,-8.8817842e-16 L3,-8.8817842e-16 C1.34314575,-8.8817842e-16 0,1.34315237 0,3 L0,4.5 C0,18.5832677 11.4167389,30 25.5,30 L27,30 C28.6568542,30 30.0001475,28.6568609 30.0001475,27 L30.0001475,23.5950066 C30.0148202,22.0892105 28.9110488,20.8057553 27.42,20.5950066 L21.42,19.7550066 C20.2307947,19.576736 19.050046,20.1257841 18.42,21.1500066 L14.7,27.3000066" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

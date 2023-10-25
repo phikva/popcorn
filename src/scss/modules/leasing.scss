@@ -1,0 +1,134 @@
+.leasing {
+    margin-top: 100px;
+    @include breakpoint('small') {
+        margin-top: 50px;
+    }
+    .card-footer {
+        padding: 30px 0;
+    }
+    .img-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        @include breakpoint('large') {
+            justify-content: end;
+        }
+    }
+
+    //container spacing quickfix
+    @include breakpoint('large') {
+        .spacing-fix:last-of-type {
+            padding-left: 80px;
+        }
+    }
+    
+    .spacing-fix {
+        padding: 20px;
+      
+    }
+
+    .top {
+        
+        @include breakpoint('large') {
+            max-width: 70%;
+        }
+       
+        h2 {
+            margin-bottom: 40px;
+        }
+    }
+
+    .leasing-text {
+        strong {
+            font-size: 14px;
+            @include breakpoint('large') {
+                font-size: 16px;
+            }
+            display: block;
+            margin-bottom: 24px;
+            margin-top: 24px;
+        }
+        p {
+            font-size: 14px;
+            @include breakpoint('large') {
+                font-size: 15px;
+            }
+            margin: 0;
+            color: $dark-gray;
+        }
+    }
+
+    .leasing-fordeler {
+        li {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px solid #ddd;
+            margin-top: 15px;
+
+            i {
+                margin-right: 10px;
+            }
+            p {
+                font-size: 14px;
+                color: $body-font-color;
+                line-height: 1.2;
+                color: $dark-gray;
+            }
+        }
+    }
+
+    .card {
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .liten-tekst {
+            font-size: 13px;
+            color: $dark-gray;
+        }
+        a {
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        background-color: $card-background;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .card-divider {
+            background-color: $dark-blue;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            h2 {
+                font-size: 40px;
+                margin: 0;
+                color: $white;
+            }
+            p {
+                color: $white;
+                margin-bottom: 0;
+            }
+        }
+        .card-section {
+           padding: 0px 30px;
+           @include breakpoint('medium') {
+            padding: 0px 150px;
+        }
+            @include breakpoint('large') {
+                padding: 0px 100px;
+            }
+
+            strong {
+                text-align: center;
+                display: block;
+                font-size: 18px;
+                color: $dark-gray;
+                margin: 40px 0;
+            }
+        }
+    }
+}

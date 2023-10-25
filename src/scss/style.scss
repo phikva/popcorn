@@ -1,0 +1,64 @@
+@import 'settings'; // this can be used to override default foundation settings, e.g. breakpoints
+@import '../../node_modules/foundation-sites/scss/foundation'; // this is required for the includes below to work
+@import '~foundation-sites/scss/foundation'; // this is required for the includes below to work
+@include foundation-global-styles;
+@include foundation-flex-classes;
+@include foundation-flex-grid;
+@include foundation-xy-grid-classes( // XY grid. http://foundation.zurb.com/sites/docs/xy-grid.html
+    $base-grid: true,
+    $margin-grid: true,
+    $padding-grid: true,
+    $block-grid: true,
+    $collapse: true,
+    $offset: true,
+    $vertical-grid: true
+);
+@include foundation-typography;
+//@include foundation-forms;
+@include foundation-visibility-classes;
+
+// helpers 
+@import 'generic/underscore-defaults';
+@import 'helpers/fonts';
+@import 'helpers/vars';
+@import 'helpers/keyframes';
+@import 'helpers/mixins';
+@import 'helpers/functions';
+// @import 'helpers/foundation-modifiers';
+@import 'helpers/colors';
+
+
+// utlities
+@import 'utilities/alignment';
+
+// base 
+@import 'base/html';
+@import 'base/heading-and-text';
+@import 'base/form';
+@import 'base/anchor';
+@import 'base/blockquote';
+@import 'base/figure';
+@import 'base/lists';
+
+// modules
+@import 'modules/buttons-and-links';
+@import 'modules/icons';
+@import 'modules/navigation';
+@import 'modules/wp-admin-bar';
+@import 'modules/wp-images';
+@import 'modules/images';
+@import 'modules/hero';
+@import 'modules/intro';
+@import 'modules/divider';
+@import 'modules/tjenester';
+@import 'modules/standardSection.scss';
+@import 'modules/leasing.scss';
+@import 'modules/faq.scss';
+@import 'modules/kontakt.scss';
+@import 'modules/header';
+@import 'modules/woocommerce';
+@import 'modules/latest-posts';
+@import 'modules/flyout-navigation';
+
+// browser specifics
+@import 'helpers/browser-specifics';

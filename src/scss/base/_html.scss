@@ -1,0 +1,27 @@
+/**
+ * base html element
+ */
+
+html {
+	overflow-x: hidden; // prevents horizontal scroll
+	font-size: 100%;
+	@include breakpoint(medium) {
+		font-size: 100%;
+	}
+	@include breakpoint(large) {
+		font-size: 100%;
+	}
+	&:before {
+		content: 'small'; // we retrieve this string in assets/js/helpers.js so the js knows which size we're on
+		display: none;
+		@include breakpoint( medium ) {
+			content: 'medium';
+		}
+		@include breakpoint( large ) {
+			content: 'large';
+		}
+	}
+}
+html.navOpen {
+	overflow: hidden;
+}

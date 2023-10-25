@@ -1,0 +1,24 @@
+.fullscreen-hero {
+    background: #333;
+    height: 100vh;
+    text-align: center;
+}
+
+#fullscreen-hero-wrapper {
+    height: 80vh !important;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    h1, .ingress {
+        color: $white !important;
+    }
+    .ingress {
+        @include breakpoint('small') {
+            font-size: 16px;
+        }
+        @include breakpoint('large') {
+            font-size: 25px;
+        }
+    }
+    
+}
